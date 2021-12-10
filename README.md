@@ -1,7 +1,7 @@
 # TarjetasBanamex
 Proyecto para recomendar tarjetas Banamex - IBM Academy
 
-### David, si ves esto, aguantame al domingo en lo que voy subiendo los avances :c ⏲️
+### David, si ves esto, aguantame al domingo en lo que voy subiendo los avances porque tengo mis proyectos de inglés :c ⏲️
 
 ## 9/12/2021
 
