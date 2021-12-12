@@ -19,7 +19,7 @@ El proyecto sufrió bastantes detalles así que lo numeraré.
 3. El controlador de Usuario tiene un método solo para guardar al usuario (soloGuardarUsuario()) y otro para guardarlo con su busqueda de perfil ideal(guardarUsuario), este segundo es el que le otorga la funcionalidad.
 
 #### Detalles:
-1. 3. Algunas funciones están en español y otras en inglés. Esto lo hice por cuestiones de tiempo pues la mayoría se implementaron a través del Query Method y las personalizadas a través de la notación @Query. Al final todas estarán en español con la notación @Query.
+1. Algunas funciones están en español y otras en inglés. Esto lo hice por cuestiones de tiempo pues la mayoría se implementaron a través del Query Method y las personalizadas a través de la notación @Query. Al final todas estarán en español con la notación @Query.
 2. La función guardarUsuario() tiene bastante lógica para mi gusto.
 3. Creo que el punto 3 se soluciona con DTO, tendré que ver las repeticiones de las clases.
 
