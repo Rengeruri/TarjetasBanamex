@@ -24,4 +24,4 @@ El proyecto sufrió bastantes detalles así que lo numeraré.
 2. La función guardarUsuario() tiene bastante lógica para mi gusto.
 3. Implementar DTO: Creo que el punto 3 se soluciona con DTO, tendré que ver las repeticiones de las clases.
 
-Falta por hacer: Testing y DTO
+Falta por hacer: Testing, swagger y DTO
