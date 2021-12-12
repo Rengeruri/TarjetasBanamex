@@ -6,6 +6,6 @@ import com.ibm.academia.apirest.entities.Usuario;
 
 public interface UsuarioDAO extends GenericoDAO<Usuario>{
 
-	Optional<Usuario> findByNumeroCuenta(String numeroCuenta);
+	Optional<Usuario> findByNumeroCuenta(String numeroCuenta); //TODO: Volver a español la función usando la notación @Query
 	
 }

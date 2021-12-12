@@ -3,17 +3,16 @@ package com.ibm.academia.apirest.entities;
 import java.io.Serializable;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -30,15 +29,11 @@ public class Tarjeta implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "nombre_tarjeta")
+	@Column(name = "nombre_tarjeta", unique = true)
 	private String nombreTarjeta;
 	
-	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
-	@JoinTable(
-			name = "tarjeta_perfil", schema = "banamex",
-			joinColumns = @JoinColumn(name = "tarjeta_id"),
-			inverseJoinColumns = @JoinColumn(name = "perfil_id")
-	)
+	@ManyToMany(mappedBy = "tarjetas", fetch = FetchType.LAZY)
+	@JsonIgnoreProperties("tarjetas")
 	private Set<Perfil> perfiles;
 	
 	
@@ -50,7 +45,7 @@ public class Tarjeta implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Tarjeta [id=" + id + ", nombreTarjeta=" + nombreTarjeta + "]";
+		return "Tarjeta: " + nombreTarjeta + "]";
 	}
 
 	private static final long serialVersionUID = 2911762464333103201L;

@@ -13,6 +13,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.ibm.academia.apirest.enums.Preferencia;
 
 import lombok.Getter;
@@ -45,6 +46,7 @@ public class Usuario implements Serializable{
 
 	@ManyToOne(optional = true, cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
 	@JoinColumn(name = "perfil_id")
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "usuarios"})
 	private Perfil perfil;
 
 	public Usuario(Integer id, String numeroCuenta, String nombre, String apellido, Preferencia preferencia, Double salario,

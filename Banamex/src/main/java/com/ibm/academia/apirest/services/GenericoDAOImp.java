@@ -13,25 +13,25 @@ public class GenericoDAOImp<E, R extends CrudRepository<E, Integer>> implements 
 	
 	@Override
 	@Transactional(readOnly = true)
-	public Optional<E> findById(Integer id) {
+	public Optional<E> buscarPorId(Integer id) {
 		return repository.findById(id);
 	}
 	
 	@Override
 	@Transactional
-	public E save(E entidad) {
+	public E guardar(E entidad) {
 		return repository.save(entidad);
 	}
 	
 	@Override
 	@Transactional(readOnly = true)
-	public Iterable<E> findAll() {
+	public Iterable<E> buscarTodos() {
 		return repository.findAll();
 	}
 	
 	@Override
 	@Transactional
-	public void deleteById(Integer id) {
+	public void eliminarPorId(Integer id) {
 		repository.deleteById(id);
 	}
 
