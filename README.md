@@ -1,4 +1,4 @@
-# TarjetasBanamex
+# Tarjetas Banamex
 Proyecto para recomendar tarjetas Banamex - IBM Academy
 
 La arquitectura de este proyecto me gustó bastante pues solo tiene 3 entidades: Usuario, Perfil y Tarjeta. La lógica es simple pues si observamos la tabla del documento veremos que son perfiles ideales para recomendar las tarjetas. Por el diseño de la tabla cada usuario puede caer solo en un perfil (muchos usuarios pueden pertenecer a un perfil), y cada perfil puede tener varias tarjetas (también una tarjeta puede estar en varios perfiles). De ahí el modelo entidad-relación 😄
