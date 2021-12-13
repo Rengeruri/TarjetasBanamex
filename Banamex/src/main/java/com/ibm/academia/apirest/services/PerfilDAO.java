@@ -7,6 +7,6 @@ import com.ibm.academia.apirest.enums.Preferencia;
 
 public interface PerfilDAO extends GenericoDAO<Perfil>{
 		
-	Optional<Perfil> findByUsuario(Preferencia preferencia, Double salario, Integer edad);
+	Optional<Perfil> buscarPorUsuario(Preferencia preferencia, Double salario, Integer edad);
 		
 }

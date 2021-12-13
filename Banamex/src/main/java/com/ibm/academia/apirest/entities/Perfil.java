@@ -13,7 +13,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -45,7 +44,6 @@ public class Perfil implements Serializable{
 	@Column(name = "edad_maxima")
 	private Integer edadMaxima;
 	
-	
 	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
 	@JoinTable(
 			name = "perfil_tarjeta", schema = "banamex",
@@ -54,11 +52,7 @@ public class Perfil implements Serializable{
 	)
 	@JsonIgnoreProperties({"perfiles", "hibernateLazyInitializer"})
 	private Set<Tarjeta> tarjetas;
-	
-	@OneToMany(mappedBy = "perfil", fetch = FetchType.LAZY)
-	@JsonIgnoreProperties({"perfil", "hibernateLazyInitializer"})
-	private Set<Usuario> usuarios;
-	
+		
 	public Perfil(Integer id, Preferencia preferencia, Double salarioMinimo, Double salarioMaximo,
 			Integer edadMinima, Integer edadMaxima) {
 		super();

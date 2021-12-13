@@ -13,6 +13,6 @@ import com.ibm.academia.apirest.enums.Preferencia;
 public interface PerfilRepository extends CrudRepository<Perfil, Integer>{
 	
 	@Query("select p from Perfil p where p.preferencia = ?1 and p.salarioMinimo <= ?2 and (p.salarioMaximo >= ?2 or p.salarioMaximo = null) and edadMinima <= ?3 and edadMaxima >= ?3")
-	Optional<Perfil> findByUsuario(Preferencia preferencia, Double salario, Integer edad);
+	Optional<Perfil> buscarPorUsuario(Preferencia preferencia, Double salario, Integer edad);
 	
 }

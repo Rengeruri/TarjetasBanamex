@@ -1,5 +1,7 @@
 package com.ibm.academia.apirest.services;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,11 @@ public class TarjetaDAOImp extends GenericoDAOImp<Tarjeta, TarjetaRepository> im
 	@Autowired
 	public TarjetaDAOImp(TarjetaRepository repository) {
 		super(repository);
+	}
+
+	@Override
+	public Optional<Tarjeta> buscarPorNombre(String nombre) {
+		return repository.buscarPorNombre(nombre);
 	}
 
 }

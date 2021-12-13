@@ -21,8 +21,8 @@ public class PerfilDAOImp extends GenericoDAOImp<Perfil, PerfilRepository> imple
 
 	@Override
 	@Transactional(readOnly = true)
-	public Optional<Perfil> findByUsuario(Preferencia preferencia, Double salario, Integer edad) {
-		return repository.findByUsuario(preferencia, salario, edad);
+	public Optional<Perfil> buscarPorUsuario(Preferencia preferencia, Double salario, Integer edad) {
+		return repository.buscarPorUsuario(preferencia, salario, edad);
 	}
 
 }
