@@ -29,5 +29,4 @@ Falta por hacer: Testing, swagger, DTO y documentación.
 
 
 #### Caso donde hay datos erroneos
-![image](https://user-images.githubusercontent.com/43730144/145896884-58016e72-e31f-4462-ae40-d0bd52c94677.png)
-
+![image](https://user-images.githubusercontent.com/43730144/145897497-07fbdf6f-868b-4bc2-bb2e-51dbc7798d4a.png)
