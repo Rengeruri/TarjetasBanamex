@@ -21,7 +21,7 @@ El proyecto sufrió bastantes detalles así que lo numeraré.
 
 #### Detalles:
 1. Algunas funciones están en español y otras en inglés. Esto lo hice por cuestiones de tiempo pues la mayoría se implementaron a través del Query Method y las personalizadas a través de la notación @Query. Al final todas estarán en español con la notación @Query.
-2. La función guardarUsuario() tiene bastante lógica para mi gusto.
-3. Implementar DTO: Creo que el punto 3 se soluciona con DTO, tendré que ver las repeticiones de las clases.
+2. La función guardarUsuario() tiene bastante lógica para mi gusto. Hay que implementarla en el DAO.
+3. Implementar DTO para extraer solo las tarjetas en las consultas.
 
 Falta por hacer: Testing, swagger y DTO
