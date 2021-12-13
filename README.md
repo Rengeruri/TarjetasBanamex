@@ -2,7 +2,7 @@
 Proyecto para recomendar tarjetas Banamex - IBM Academy.  Proyecto basado en: [Entregable.docx](https://github.com/Rengeruri/TarjetasBanamex/files/7698101/Entregable.docx)
 
 El proyecto sufrió un cambio de enfoque. Originalmente había una relación uno a muchos entre Usuario y Perfil, y una relación muchos a muchos entre Perfil y Tarjetas. Ahora la entidad Usuario ha sido eliminada pues no es necesario realizar CRUD's con los usuarios, pero mantego eso en las otras dos entidades pues es mi forma de almacenar la información de la tabla.
-La filosifa de la entidad relación esta basada en que el un perfil puede tener muchas tarjetas y que muchas tarjetas pueden estar en varios perfiles. Cuando se quiere hacer una recomendación se ingresan los 3 parametros especificados en el documento y se encuentra el perfil que tenga los rangos donde el usuario pueda pertenecer.
+La filosofía de la entidad relación esta basada en que el un perfil puede tener muchas tarjetas y que muchas tarjetas pueden estar en varios perfiles. Cuando se quiere hacer una recomendación se ingresan los 3 parametros especificados en el documento y se encuentra el perfil que tenga los rangos donde el usuario pueda pertenecer.
 
 ## 13/12/2021
 
