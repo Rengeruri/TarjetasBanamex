@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ibm.academia.apirest.entities.Perfil;
 import com.ibm.academia.apirest.enums.Preferencia;
+import com.ibm.academia.apirest.models.entities.Perfil;
 
 @Repository
 public interface PerfilRepository extends CrudRepository<Perfil, Integer>{
