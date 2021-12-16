@@ -19,14 +19,14 @@ La filosofía de la entidad relación esta basada en que el un perfil puede tene
 
 Falta por hacer: Testing, swagger, DTO y documentación.
 
-### Funcionamiento hasta ahora:
-#### Caso donde hay recomendación
-![image](https://user-images.githubusercontent.com/43730144/145897193-8ea7ba19-5cb3-48a2-a004-cbcb6b793419.png)
+## 15/12/2021
 
+#### Se implementó
+1. Se agregó DTO para que la impresión de las tarjetas fuera limpia.
+2. Se implementó testeo para el repositorio de Perfil, solamente se hizo con una función pues es la única función implementada en el DAO.
+3. Se agregó la documentación a los métodos de los controladores de Perfil y de Tarjeta.
 
-#### Caso donde no hay recomendación dependiendo el usuario
-![image](https://user-images.githubusercontent.com/43730144/145897132-878e5cb6-5791-4976-9956-38e46ddc1197.png)
+#### Detalles:
+1. Aún mantengo la clase inútil: Usuario. Mañana David me recomendará eliminarla o no.
 
-
-#### Caso donde hay datos erroneos
-![image](https://user-images.githubusercontent.com/43730144/145897497-07fbdf6f-868b-4bc2-bb2e-51dbc7798d4a.png)
+Falta por hacer: Implementar Swagger
